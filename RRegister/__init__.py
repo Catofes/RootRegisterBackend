@@ -85,6 +85,9 @@ class StudentList:
         if 'special' in request.keys():
             special = request['special']
 
+        if len(self.db.students.find({})) > 100:
+            raise RUtils.RError(10)
+
         register_time = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
         self.db.students.insert({
             'name': name,

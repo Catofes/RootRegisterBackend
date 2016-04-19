@@ -1,7 +1,7 @@
 # -*- coding: UTF-8 -*-
 from wsgiref import simple_server
 import falcon
-import RRoute.middleware as middleware
+import RRoute.middleware
 import RUtils
 import traceback
 from pymongo import MongoClient

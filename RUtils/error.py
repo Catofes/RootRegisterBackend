@@ -20,6 +20,8 @@ Error_text = {
         falcon.HTTP_403],
     9: ['Duplicate Email. If You Submitted Wrong Info. Please Contact Admin',
         falcon.HTTP_403],
+    10: ['Students reach limits.',
+        falcon.HTTP_403],
     403: ['',
           falcon.HTTP_403],
     404: ['',
